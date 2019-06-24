@@ -1,0 +1,18 @@
+# meer icons komen soon, momenteel alleen de diamond.
+
+Items:
+  Whitelist:
+    Name: "&6Whitelist"
+    Types:
+      Aan:
+        Name: "&c%diamond% &aAan"
+      Uit:
+        Name: "&c%diamond% &4Uit"
+  Players:
+    Name: "&6Players"
+    SkullOwner: "ZwarteTape" # DIT KAN ALLE SKINS BEVATTEN, INCLUSIEF LINKS
+  OPPlayers:
+    Name: "&6OP-Players"
+
+# ServerManager MOET hier blijven staan.
+ignored-plugins: [ServerManager]

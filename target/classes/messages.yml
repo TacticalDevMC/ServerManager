@@ -1,0 +1,50 @@
+prefix: "&7[&3Server&bManager&7]"
+geen-perms: "%prefix% &cU hebt hier geen permissions voor."
+
+Commands:
+  Main:
+    geenArgs: "&7Usage: &c/servermanager <help, update, updateinfo>&7."
+  PluginManager:
+    geenArgs: "&7Usage: &c/pluginmanager <enable, disable, load, unload, reload, dump, info, list> <plugin (Restart/reload: all, *)>&7."
+    pluginAlreadyEnabled: "%prefix% &cDeze plugin staat al aan."
+    enable:
+      pluginEnabled: "%prefix% &7De plugin &6%plugin% &7is nu &6Enabled&7."
+      pluginNotExists: "%prefix% &7De plugin &6%plugin% &7zit niet in de server."
+    load:
+      invalidPlugin: "%prefix% &cDit is geen juiste plugin."
+      invalidDirectory: "%prefix% &cDit is geen juiste directory."
+      pluginAlreadyLoaded: "%prefix% &cDe plugin &6%plugin% &cis al ingebruik."
+      pluginLoaded: "%prefix% &7De plugin &6%plugin% &7is geladen."
+      cannotFindLoad: "%prefix% &cIk kan geen load vinden."
+      pluginIgnored: "%prefix% &cDeze plugin kun je hiervoor niet gebruiken.."
+    unloaded:
+      pluginUnloaded: "%prefix% &7De plugin &6%plugin% &7is niet meer geladen."
+    restart:
+      allPluginsRestarted: "%prefix% &7Alle plugins zijn &6gerestart&7."
+      pluginRestarted: "%prefix% &7De plugin &6%plugin% &7is gerestart."
+    reload:
+      allPluginsReloaded: "%prefix% &7Alle plugins zijn &6herladen&7."
+      pluginReloaded: "%prefix% &7De plugin &6%plugin% &7is herladen."
+    disable:
+      allPluginsDisabled: "%prefix% &7Alle plugins zijn &6disabled&7."
+      pluginDisabled: "%prefix% &7De plugin &6%plugin% &7is disabled."
+      pluginIsNotEnabled: "%prefix% &cDeze plugin is niet &6enabled&c."
+    dump:
+      dumpOnFileName: "%prefix% &7Alles is gedumpt in de file &f%dumpFile%&7."
+      dumpError: "%prefix% &7Kan niet dumpen naar de file."
+    info:
+      infoHeader: "&bPlugin Information: &6%pluginName%"
+      infoVersion: "&7- Version: &6%pluginVersion%"
+      infoAuthors: "&7- Author(s): &6%pluginAuthors%"
+      infoStatus: "&7- Status: &6%pluginStatus%"
+      infoDepends: "&7- Depends: &6%pluginDepends%"
+      infoSoftDepends: "&7- SoftDepends: &6%pluginSoftDepends%"
+    list:
+        listHeader: "&9Plugins &f(%totalPlugins%): %plugins%"
+  Default:
+    subCommandNotFound: "&cSorry, u hebt geen juiste sub-command ingevoerd."
+
+Opties:
+  Whitelist:
+    whitelistAan: "%prefix% &7U heb de server whitelist &aaan &7gezet."
+    whitelistUit: "%prefix% &7U heb de server whitelist &4uit &7gezet."

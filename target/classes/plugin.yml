@@ -1,0 +1,14 @@
+name: ServerManager
+version: 1.0.0
+main: me.flexdevelopment.servermanager.ServerManager
+authors: [ZwarteTape]
+description: Een plugin om uw server mee te bedienen
+softdepend: [SuperWhitelist]
+commands:
+  servermanager:
+    description: ServerManager main command
+    aliases: [svm, serverm, servm]
+  test:
+  pluginmanager:
+    description: PluginManager command
+    aliases: [plugmanager, plmanager, pluginm]
