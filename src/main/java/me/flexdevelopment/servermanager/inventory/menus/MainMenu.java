@@ -23,34 +23,40 @@ public class MainMenu {
     private static String playersHead = ServerManager.getInstance().getConfigModule().getPlayersHead();
     @Getter
     private static String OPPlayersName = ServerManager.getInstance().getConfigModule().getOPPlayersName();
+    @Getter
+    private static String loginMessageName = ServerManager.getInstance().getConfigModule().getLoginMessageItemName();
+    @Getter
+    private static String logoutMessageName = ServerManager.getInstance().getConfigModule().getLogoutMessageItemName();
 
     @Getter
     private static String mainMenuInventoryName = color("&3Bekijk alle opties");
 
     public void open(Player player) {
 
-//        if (playersHead.equalsIgnoreCase("OWN")) {
-//            Inventory inventory = Bukkit.createInventory(null, 36, mainMenuInventoryName);
-//
-//            ItemStack whitelist = CreateItemStacks.createItem(new ItemBuilder(Material.FEATHER), whitelistName, " ", Chat.color("&c" + Icons.ARROW + " &7Klik hier om de &6Whitelist &7aan te passen"), " ");
-//            ItemStack players = CreateItemStacks.createSkullWithOwner(player.getName(), playersName, " ", Chat.color("&c" + Icons.ARROW + " &7Klik hier om alle &6Players &7te zien."), " ");
-//            ItemStack OPPlayers = CreateItemStacks.createSkullWithOwner(player.getName(), OPPlayersName, " ", Chat.color("&c" + Icons.ARROW + " &7Klik hier om alle &6OP-Players &7te zien."), " ");
-//
-//            inventory.setItem(11, whitelist);
-//            inventory.setItem(13, players);
-//            inventory.setItem(15, OPPlayers);
-//            player.openInventory(inventory);
-//        } else {
-
         Inventory inventory = Bukkit.createInventory(null, 36, mainMenuInventoryName);
 
         ItemStack whitelist = CreateItemStacks.createItem(new ItemBuilder(Material.FEATHER), whitelistName, " ", Chat.color("&c" + Icons.ARROW + " &7Klik hier om de &6Whitelist &7aan te passen"), " ");
-        ItemStack players = CreateItemStacks.createSkullWithOwner(playersHead, playersName, " ", Chat.color("&c" + Icons.ARROW + " &7Klik hier om alle &6Players &7te zien."), " ");
-        ItemStack OPPlayers = CreateItemStacks.createSkullWithOwner(playersHead, OPPlayersName, " ", Chat.color("&c" + Icons.ARROW + " &7Klik hier om alle &6OP-Players &7te zien."), " ");
-
         inventory.setItem(11, whitelist);
-        inventory.setItem(13, players);
+
+        if (playersHead.startsWith("http://")) {
+            ItemStack players = CreateItemStacks.createSkullWithUrl(playersHead, playersName, " ", Chat.color("&c" + Icons.ARROW + " &7Klik hier om alle &6Players &7te zien."), " ");
+            inventory.setItem(13, players);
+        } else {
+            ItemStack players = CreateItemStacks.createSkullWithOwner(playersHead, playersName, " ", Chat.color("&c" + Icons.ARROW + " &7Klik hier om alle &6Players &7te zien."), " ");
+            inventory.setItem(13, players);
+        }
+
+        ItemStack OPPlayers = CreateItemStacks.createSkullWithUrl("http://textures.minecraft.net/texture/4a15fb3ea62d130df80796c62e478f07bd1565cb551fe246bc690fd1d555ac"
+                , OPPlayersName, " ", Chat.color("&c" + Icons.ARROW + " &7Klik hier om alle &6OP-Players &7te zien."), " ");
         inventory.setItem(15, OPPlayers);
+
+        ItemStack loginMessage = CreateItemStacks.createItem(new ItemBuilder(Material.PAPER, 1), loginMessageName, " ", color("&7Klik om de &6LoginMessage &7te veranderen."), " ");
+        inventory.setItem(21, loginMessage);
+
+        ItemStack logoutMessage = CreateItemStacks.createItem(new ItemBuilder(Material.PAPER, 1), logoutMessageName, " ", color("&7Klik om de &6LogoutMessage &7te veranderen."), " ");
+        inventory.setItem(23, logoutMessage);
+
+
         player.openInventory(inventory);
     }
 }

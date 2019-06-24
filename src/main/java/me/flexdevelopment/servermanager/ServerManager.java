@@ -11,6 +11,7 @@ import me.flexdevelopment.servermanager.modules.player.commands.ServerManagerCom
 import me.flexdevelopment.servermanager.modules.player.commands.TestCommand;
 import me.flexdevelopment.servermanager.modules.player.commands.base.CommandBase;
 import me.flexdevelopment.servermanager.modules.player.listeners.inventory.ClickListener;
+import me.flexdevelopment.servermanager.modules.player.listeners.player.ChatListener;
 import org.bukkit.Bukkit;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.event.EventHandler;
@@ -18,8 +19,10 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.UUID;
 
 public final class ServerManager extends JavaPlugin {
 
@@ -33,6 +36,9 @@ public final class ServerManager extends JavaPlugin {
     private List<String> ignoredPlugins = null;
     @Getter
     private ConfigModule configModule;
+
+    private List<UUID> loginMessagePlayer;
+    private List<UUID> logoutMessagePlayer;
 
     @Override
     public void onEnable() {
@@ -52,14 +58,17 @@ public final class ServerManager extends JavaPlugin {
                 new PLManagerCommand()
         );
 
+        registerListeners(
+                new ClickListener(),
+                new ChatListener()
+        );
+
         getCommand("test").setExecutor(new TestCommand());
-//        registerListeners(new TestCommand());
 
         ignoredPlugins = FileManager.get("config.yml").getStringList("ignored-plugins");
+        loginMessagePlayer = new ArrayList<>();
+        logoutMessagePlayer = new ArrayList<>();
 
-        registerListeners(
-                new ClickListener()
-        );
     }
 
     @Override
@@ -95,5 +104,13 @@ public final class ServerManager extends JavaPlugin {
 
     public List<String> getIgnoredPlugins() {
         return ignoredPlugins;
+    }
+
+    public List<UUID> getLoginMessagePlayer() {
+        return loginMessagePlayer;
+    }
+
+    public List<UUID> getlogoutMessagePlayer() {
+        return logoutMessagePlayer;
     }
 }

@@ -6,6 +6,7 @@ import me.joran.superwhitelist.SuperWhitelist;
 import me.joran.superwhitelist.managers.FileManager;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
+import org.bukkit.Server;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -50,6 +51,19 @@ public class ClickListener implements Listener {
                         OPPlayersListMenu opPlayersListMenu = new OPPlayersListMenu();
 
                         opPlayersListMenu.open(player);
+                    }
+                    break;
+                case 21:
+                    if (event.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(MainMenu.getLoginMessageName())) {
+                        ServerManager.getInstance().getLoginMessagePlayer().add(player.getUniqueId());
+                        player.sendMessage(ServerManager.getInstance().getMessageModule().getLoginMessageChatMessage());
+                        player.closeInventory();
+                    }
+                case 23:
+                    if (event.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(MainMenu.getLogoutMessageName())) {
+                        ServerManager.getInstance().getlogoutMessagePlayer().add(player.getUniqueId());
+                        player.sendMessage(ServerManager.getInstance().getMessageModule().getLogoutMessageChatMessage());
+                        player.closeInventory();
                     }
                     break;
                 default:

@@ -18,6 +18,16 @@ public class MessageModule {
     private String mainArgsNotFound = FileManager.get("messages.yml").getString("Commands.Main.geenArgs");
     private String geenSubCommandFound = FileManager.get("messages.yml").getString("Commands.Default.subCommandNotFound");
     private String plManagerArgsNotFound = FileManager.get("messages.yml").getString("Commands.PluginManager.geenArgs");
+    private String loginMessageCanceled = FileManager.get("messages.yml").getString("login-message-canceled");
+    private String loginMessageChatMessage = FileManager.get("messages.yml").getString("login-message-chat-message");
+    private String loginMessageSetToGeen = FileManager.get("messages.yml").getString("login-message-gezet-naar-geen");
+    private String loginMessageSuccesSet = FileManager.get("messages.yml").getString("login-message-succes");
+
+    private String getLogoutMessageCanceled = FileManager.get("messages.yml").getString("logout-message-canceled");
+    private String getLogoutMessageChatMessage = FileManager.get("messages.yml").getString("logout-message-chat-message");
+    private String getLogoutMessageSetToGeen = FileManager.get("messages.yml").getString("logout-message-gezet-naar-geen");
+    private String getLogoutMessageSuccesSet = FileManager.get("messages.yml").getString("logout-message-succes");
+
 
     // pluginmanager
     private String pluginAlreadyEnabled = FileManager.get("messages.yml").getString("Commands.PluginManager.pluginAlreadyEnabled");
@@ -197,5 +207,37 @@ public class MessageModule {
 
     public String getListHeader() {
         return color(listHeader);
+    }
+
+    public String getLoginMessageCanceled() {
+        return color(loginMessageCanceled).replace("%prefix%", prefix);
+    }
+
+    public String getLoginMessageChatMessage() {
+        return color(loginMessageChatMessage).replace("%prefix%", prefix);
+    }
+
+    public String getLoginMessageSetToGeen() {
+        return color(loginMessageSetToGeen).replace("%prefix%", prefix);
+    }
+
+    public String getLoginMessageSuccesSet() {
+        return color(loginMessageSuccesSet).replace("%prefix%", prefix);
+    }
+
+    public String getLogoutMessageCanceled() {
+        return color(getLogoutMessageCanceled).replace("%prefix%", prefix);
+    }
+
+    public String getLogoutMessageChatMessage() {
+        return color(getLogoutMessageChatMessage).replace("%prefix%", prefix);
+    }
+
+    public String getLogoutMessageSetToGeen() {
+        return color(getLogoutMessageSetToGeen).replace("%prefix%", prefix);
+    }
+
+    public String getLogoutMessageSuccesSet() {
+        return color(getLogoutMessageSuccesSet).replace("%prefix%", prefix);
     }
 }

@@ -1,5 +1,8 @@
 # meer icons komen soon, momenteel alleen de diamond.
 
+login-message: "Geen"
+logout-message: "Geen"
+
 Items:
   Whitelist:
     Name: "&6Whitelist"
@@ -13,6 +16,10 @@ Items:
     SkullOwner: "ZwarteTape" # DIT KAN ALLE SKINS BEVATTEN, INCLUSIEF LINKS
   OPPlayers:
     Name: "&6OP-Players"
+  LoginMessage:
+    Name: "&6Verander De LoginMessage"
+  LogoutMessage:
+    Name: "&6Verander De LogoutMessage"
 
 # ServerManager MOET hier blijven staan.
 ignored-plugins: [ServerManager]
