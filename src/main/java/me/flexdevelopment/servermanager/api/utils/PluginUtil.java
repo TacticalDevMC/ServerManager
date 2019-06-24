@@ -19,6 +19,8 @@ import org.bukkit.command.SimpleCommandMap;
 import org.bukkit.event.Event;
 import org.bukkit.plugin.*;
 
+import static me.flexdevelopment.servermanager.api.utils.Chat.color;
+
 /**
  * Utilities for managing plugins.
  *
@@ -493,6 +495,5 @@ public class PluginUtil {
         System.gc();
 
         return "Unloaded: " + name;
-
     }
 }

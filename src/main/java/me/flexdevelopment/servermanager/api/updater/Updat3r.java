@@ -129,15 +129,15 @@ public class Updat3r {
     }
 
     public void sendUpdateMessage(Player p) {
-        p.sendMessage(color("   &3-=-=-=[&3Server&bManager]=-=-=-   "));
-        p.sendMessage(color("&3Er is een update beschikbaar voor &3Server&bManager&3!"));
-        p.sendMessage(color("&3Je maakt nu gebruik van de versie &b" + ServerManager.getPlugin(ServerManager.class).getDescription().getVersion() + "&3."));
-        p.sendMessage(color("&3De nieuwste versie is &b" + update.getVersion()));
+        p.sendMessage(color("   &7-=-=-=[&3Server&bManager&7]=-=-=-   "));
+        p.sendMessage(color("&6Er is een update beschikbaar voor &3Server&bManager&6!"));
+        p.sendMessage(color("&6Je maakt nu gebruik van de versie &6&l" + ServerManager.getPlugin(ServerManager.class).getDescription().getVersion() + "&6."));
+        p.sendMessage(color("&6De nieuwste versie is &6&l" + update.getVersion()));
         if (update.isCritical()) {
-            p.sendMessage(color("&3&lLet op, deze build is gemarkeert als belangrijk. Installeer hem zo snel mogelijk!"));
+            p.sendMessage(color("&c&lLet op, deze build is gemarkeert als belangrijk. Installeer hem zo snel mogelijk!"));
         }
-        p.sendMessage(color("&3Om deze update te installeren, type je &b/servm update."));
-        p.sendMessage(color("   &3-=-=-=[&3Server&bManager]=-=-=-   "));
+        p.sendMessage(color("&6Om deze update te installeren, type je &6&l/servm update."));
+        p.sendMessage(color("   &7-=-=-=[&3Server&bManager&7]=-=-=-   "));
     }
 
     public void sendUpdateMessageLater(Player p) {
@@ -146,9 +146,11 @@ public class Updat3r {
                 if (p.isOp()) {
                     if (update == null) {
                         Bukkit.getConsoleSender().sendMessage("[ServerManager-Updater] Updater is null.");
+                        return;
                     }
                     if (!update.isNewer()) {
                         Bukkit.getConsoleSender().sendMessage("[ServerManager-Updater] Er is geen update gevonden! U gebruikt momenteel de versie " + update.getVersion());
+                        return;
                     }
                     if (update.isNewer()) {
                         sendUpdateMessage(p);

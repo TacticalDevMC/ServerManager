@@ -81,6 +81,8 @@ public class ClickListener implements Listener {
             }
         } else if (inventory.getTitle().equalsIgnoreCase(PluginsListMenu.getPluginsMenuInventoryName())) {
             event.setCancelled(true);
+        } else if (inventory.getTitle().equalsIgnoreCase(OPPlayersListMenu.getPlayersListInventoryName())) {
+            event.setCancelled(true);
         }
     }
 }

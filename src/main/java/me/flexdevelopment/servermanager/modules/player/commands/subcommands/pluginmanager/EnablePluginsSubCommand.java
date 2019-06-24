@@ -2,7 +2,7 @@ package me.flexdevelopment.servermanager.modules.player.commands.subcommands.plu
 
 import me.flexdevelopment.servermanager.ServerManager;
 import me.flexdevelopment.servermanager.api.utils.PluginUtil;
-import me.flexdevelopment.servermanager.api.utils.PluginsManager;
+
 import me.flexdevelopment.servermanager.api.utils.StringUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -30,7 +30,7 @@ public class EnablePluginsSubCommand {
             return false;
         }
 
-        if (PluginsManager.isPluginEnabled(plugin)) {
+        if (target.isEnabled()) {
             player.sendMessage(ServerManager.getInstance().getMessageModule().getPluginAlreadyEnabled());
             return false;
         }

@@ -2,7 +2,6 @@ package me.flexdevelopment.servermanager.modules.player.commands.subcommands.plu
 
 import me.flexdevelopment.servermanager.ServerManager;
 import me.flexdevelopment.servermanager.api.utils.PluginUtil;
-import me.flexdevelopment.servermanager.api.utils.PluginsManager;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -32,11 +31,6 @@ public class DisablePluginsSubCommand {
 
         if (target != null) {
             player.sendMessage(ServerManager.getInstance().getMessageModule().getPluginNotExists().replace("%plugin%", target.getName()));
-            return false;
-        }
-
-        if (PluginsManager.isPluginEnabled(plugin)) {
-            player.sendMessage(ServerManager.getInstance().getMessageModule().getPluginAlreadyEnabled());
             return false;
         }
 
