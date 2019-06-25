@@ -2,6 +2,7 @@ package me.flexdevelopment.servermanager.api;
 
 import me.flexdevelopment.servermanager.ServerManager;
 import me.flexdevelopment.servermanager.api.utils.FileManager;
+import org.bukkit.Bukkit;
 
 import static me.flexdevelopment.servermanager.api.utils.Chat.color;
 
@@ -63,6 +64,8 @@ public class ConfigModule {
     public void setLoginMessage(String loginMessage) {
         FileManager.get("config.yml").set("login-message", loginMessage);
         FileManager.save(plugin, "config.yml");
+        Bukkit.getPluginManager().getPlugin(plugin.getDescription().getName()).reloadConfig();
+        Bukkit.reload();
     }
 
     public String getLoginMessageItemName() {
@@ -76,6 +79,8 @@ public class ConfigModule {
     public void setLogoutMessage(String logoutMessage) {
         FileManager.get("config.yml").set("logout-message", logoutMessage);
         FileManager.save(plugin, "config.yml");
+        Bukkit.getPluginManager().getPlugin(plugin.getDescription().getName()).reloadConfig();
+        Bukkit.reload();
     }
 
     public String getLogoutMessageItemName() {

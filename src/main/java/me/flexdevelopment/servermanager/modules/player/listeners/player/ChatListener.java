@@ -1,6 +1,7 @@
 package me.flexdevelopment.servermanager.modules.player.listeners.player;
 
 import me.flexdevelopment.servermanager.ServerManager;
+import me.flexdevelopment.servermanager.api.utils.FileManager;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -15,8 +16,6 @@ public class ChatListener implements Listener {
         String message = event.getMessage();
 
         if (ServerManager.getInstance().getLoginMessagePlayer().contains(player.getUniqueId())) {
-            //TODO: add message to config : login-message
-
             if (message.contains("Cancel") || message.contains("cancel")) {
                 player.sendMessage(ServerManager.getInstance().getMessageModule().getLoginMessageCanceled());
                 event.setCancelled(true);
@@ -35,8 +34,6 @@ public class ChatListener implements Listener {
         }
 
         if (ServerManager.getInstance().getlogoutMessagePlayer().contains(player.getUniqueId())) {
-            //TODO: add message to config : login-message
-
             if (message.contains("Cancel") || message.contains("cancel")) {
                 player.sendMessage(ServerManager.getInstance().getMessageModule().getLogoutMessageCanceled());
                 event.setCancelled(true);

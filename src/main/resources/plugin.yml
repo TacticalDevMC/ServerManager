@@ -12,3 +12,7 @@ commands:
   pluginmanager:
     description: PluginManager command
     aliases: [plugmanager, plmanager, pluginm]
+  report:
+    description: Report een speler
+  showreports:
+  clearreports:

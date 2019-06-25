@@ -1,4 +1,4 @@
-# meer icons komen soon, momenteel alleen de diamond.
+#meer icons komen soon, momenteel alleen de diamond.
 
 login-message: "Geen"
 logout-message: "Geen"
@@ -13,7 +13,7 @@ Items:
         Name: "&c%diamond% &4Uit"
   Players:
     Name: "&6Players"
-    SkullOwner: "ZwarteTape" # DIT KAN ALLE SKINS BEVATTEN, INCLUSIEF LINKS
+    SkullOwner: "ZwarteTape" #DIT KAN ALLE SKINS BEVATTEN, INCLUSIEF LINKS
   OPPlayers:
     Name: "&6OP-Players"
   LoginMessage:
@@ -21,5 +21,5 @@ Items:
   LogoutMessage:
     Name: "&6Verander De LogoutMessage"
 
-# ServerManager MOET hier blijven staan.
+#ServerManager MOET hier blijven staan.
 ignored-plugins: [ServerManager]

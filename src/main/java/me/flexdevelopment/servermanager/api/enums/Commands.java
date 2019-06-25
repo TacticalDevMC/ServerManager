@@ -2,8 +2,12 @@ package me.flexdevelopment.servermanager.api.enums;
 
 public enum Commands {
 
-    MAINCOMMAND("servermanager", "/servermanger <help, update, updateinfo>", "De ServerManager main command", "servermanager.main", "[svm, serverm, servm]"),
-    PLMANAGERCOMMAND("pluginmanager", "/pluginmanager <enable, disable, load, unload, reload, dump, info, list> <plugin (Restart/reload: all, *)>", "PluginManager command", "servermanager.pluginmanager", "[plugmanager, plmanager, pluginm]");
+    MAINCOMMAND("servermanager", "/servermanger <help, update, updateinfo, openmenu>", "De ServerManager main command", "servermanager.main", "[svm, serverm, servm]"),
+    PLMANAGERCOMMAND("pluginmanager", "/pluginmanager <enable, disable, load, unload, reload, dump, info, list> <plugin (Restart/reload: all, *)>", "PluginManager command", "servermanager.pluginmanager", "[plugmanager, plmanager, pluginm]"),
+    REPORTCOMMAND("report", "/report <player> <type> <Hackes: speed, killaura> ", "Report een speler", null, null),
+    SHOWREPORTSCOMMAND("showreports", "/showreports <player>", "Laat de speler zijn reports zien", "servermanager.report.showreports", null),
+    CLEARREPORTSCOMMAND("clearreports", "/clearreports <player>", "Clear de speler zijn reports", "servermanager.report.clearreports", null);
+
 
     private String command, usage, description, permission;
     private String[] aliases;

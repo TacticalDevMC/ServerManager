@@ -18,12 +18,13 @@ public class InfoPluginsSubCommand {
 
         Player player = (Player) sender;
 
-        Plugin target = PluginUtil.getPluginByName(args, 1);
-
         if (args.length == 1) {
             player.sendMessage(ServerManager.getInstance().getMessageModule().getPlManagerArgsNotFound());
             return false;
         }
+
+        Plugin target = PluginUtil.getPluginByName(args, 1);
+
 
         if (target == null) {
             player.sendMessage(ServerManager.getInstance().getMessageModule().getPluginNotExists().replace("%plugin%", target.getName()));

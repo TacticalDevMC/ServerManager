@@ -2,16 +2,16 @@ package me.flexdevelopment.servermanager;
 
 import lombok.Getter;
 import me.flexdevelopment.servermanager.api.ConfigModule;
+import me.flexdevelopment.servermanager.api.managers.ReportManager;
 import me.flexdevelopment.servermanager.api.message.MessageModule;
 import me.flexdevelopment.servermanager.api.updater.Updat3r;
 import me.flexdevelopment.servermanager.api.utils.FileManager;
 import me.flexdevelopment.servermanager.modules.PlayerModule;
-import me.flexdevelopment.servermanager.modules.player.commands.PLManagerCommand;
-import me.flexdevelopment.servermanager.modules.player.commands.ServerManagerCommand;
-import me.flexdevelopment.servermanager.modules.player.commands.TestCommand;
+import me.flexdevelopment.servermanager.modules.player.commands.*;
 import me.flexdevelopment.servermanager.modules.player.commands.base.CommandBase;
 import me.flexdevelopment.servermanager.modules.player.listeners.inventory.ClickListener;
 import me.flexdevelopment.servermanager.modules.player.listeners.player.ChatListener;
+import me.flexdevelopment.servermanager.modules.player.listeners.player.PlayerConnectionListener;
 import org.bukkit.Bukkit;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.event.EventHandler;
@@ -36,6 +36,8 @@ public final class ServerManager extends JavaPlugin {
     private List<String> ignoredPlugins = null;
     @Getter
     private ConfigModule configModule;
+    @Getter
+    ReportManager reportManager;
 
     private List<UUID> loginMessagePlayer;
     private List<UUID> logoutMessagePlayer;
@@ -50,17 +52,22 @@ public final class ServerManager extends JavaPlugin {
         playerModule = new PlayerModule(this);
         messageModule = new MessageModule(this);
         configModule = new ConfigModule(this);
+        reportManager = new ReportManager(this);
 
         updater(this);
 
         registerCommands(
                 new ServerManagerCommand(),
-                new PLManagerCommand()
+                new PLManagerCommand(),
+                new ReportCommand(),
+                new ShowReportsCommand(),
+                new ClearReportsCommand()
         );
 
         registerListeners(
                 new ClickListener(),
-                new ChatListener()
+                new ChatListener(),
+                new PlayerConnectionListener()
         );
 
         getCommand("test").setExecutor(new TestCommand());
@@ -77,6 +84,8 @@ public final class ServerManager extends JavaPlugin {
         instance = null;
         console.sendMessage("[ServerManager] Plugin disabled! Version: " + this.getDescription().getVersion() + " Author(s): " + this.getDescription().getAuthors());
         ignoredPlugins = null;
+        loginMessagePlayer = null;
+        logoutMessagePlayer = null;
     }
 
     private void updater(ServerManager serverManager) {

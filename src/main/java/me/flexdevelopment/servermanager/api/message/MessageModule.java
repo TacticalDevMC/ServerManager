@@ -18,6 +18,9 @@ public class MessageModule {
     private String mainArgsNotFound = FileManager.get("messages.yml").getString("Commands.Main.geenArgs");
     private String geenSubCommandFound = FileManager.get("messages.yml").getString("Commands.Default.subCommandNotFound");
     private String plManagerArgsNotFound = FileManager.get("messages.yml").getString("Commands.PluginManager.geenArgs");
+    private String reportArgsNotFound = FileManager.get("messages.yml").getString("Commands.Report.geenArgs");
+
+
     private String loginMessageCanceled = FileManager.get("messages.yml").getString("login-message-canceled");
     private String loginMessageChatMessage = FileManager.get("messages.yml").getString("login-message-chat-message");
     private String loginMessageSetToGeen = FileManager.get("messages.yml").getString("login-message-gezet-naar-geen");
@@ -76,6 +79,18 @@ public class MessageModule {
     // opties - whitelist
     private String whitelistAan = FileManager.get("messages.yml").getString("Opties.Whitelist.whitelistAan");
     private String whitelistUit = FileManager.get("messages.yml").getString("Opties.Whitelist.whitelistUit");
+
+    // report
+    private String geenSpelerGevonden = FileManager.get("messages.yml").getString("Commands.Report.geenSpeler");
+    private String reportedSucces = FileManager.get("messages.yml").getString("Commands.Report.reportedSucces");
+    private String reportVerwijderd = FileManager.get("messages.yml").getString("Commands.Report.reportVerwijderd");
+    private String geenReportsVoorDezeSpeler = FileManager.get("messages.yml").getString("Commands.Report.geenReportsVoorDezeSpeler");
+
+    // report - info
+    private String infoReportHeader = FileManager.get("messages.yml").getString("Commands.Report.info.infoHeader");
+    private String infoReden = FileManager.get("messages.yml").getString("Commands.Report.info.infoReden");
+    private String infoDatum = FileManager.get("messages.yml").getString("Commands.Report.info.infoDatum");
+    private String infoModerator = FileManager.get("messages.yml").getString("Commands.Report.info.infoModerator");
 
     public String getPrefix() {
         return color(prefix);
@@ -239,5 +254,41 @@ public class MessageModule {
 
     public String getLogoutMessageSuccesSet() {
         return color(getLogoutMessageSuccesSet).replace("%prefix%", prefix);
+    }
+
+    public String getReportArgsNotFound() {
+        return color(reportArgsNotFound).replace("%prefix%", prefix);
+    }
+
+    public String getGeenSpelerGevonden() {
+        return color(geenSpelerGevonden).replace("%prefix%", prefix);
+    }
+
+    public String getReportedSucces() {
+        return color(reportedSucces).replace("%prefix%", prefix);
+    }
+
+    public String getReportVerwijderd() {
+        return color(reportVerwijderd).replace("%prefix%", prefix);
+    }
+
+    public String getGeenReportsVoorDezeSpeler() {
+        return color(geenReportsVoorDezeSpeler).replace("%prefix%", prefix);
+    }
+
+    public String getInfoReportHeader() {
+        return color(infoReportHeader);
+    }
+
+    public String getInfoReden() {
+        return color(infoReden);
+    }
+
+    public String getInfoDatum() {
+        return color(infoDatum);
+    }
+
+    public String getInfoModerator() {
+        return color(infoModerator);
     }
 }

@@ -3,7 +3,7 @@ geen-perms: "%prefix% &cU hebt hier geen permissions voor."
 
 Commands:
   Main:
-    geenArgs: "&7Usage: &c/servermanager <help, update, updateinfo>&7."
+    geenArgs: "&7Usage: &c/servermanager <help, update, updateinfo, openmenu>&7."
   PluginManager:
     geenArgs: "&7Usage: &c/pluginmanager <enable, disable, load, unload, reload, dump, info, list> <plugin (Restart/reload: all, *)>&7."
     pluginAlreadyEnabled: "%prefix% &cDeze plugin staat al aan."
@@ -41,6 +41,17 @@ Commands:
       infoSoftDepends: "&7- SoftDepends: &6%pluginSoftDepends%"
     list:
       listHeader: "&9Plugins &f(%totalPlugins%): %plugins%"
+  Report:
+    geenArgs: "&7Usage: &c/report <player> <type> <Hackes: speed, killaura>&7."
+    geenSpeler: "%prefix% &7De speler &6%target% &7is niet online, of bestaat niet."
+    reportedSucces: "%prefix% &7U hebt de speler &6%target% &7gereport als reden &6%reden%&7."
+    reportVerwijderd: "%prefix% &7De report van de speler &6%target% &7is verwijderd."
+    geenReportsVoorDezeSpeler: "%prefix% &7Er zijn geen reports gevonden voor de speler &6%target%&7."
+    info:
+      infoHeader: "&bReported Player: &6%reportedPlayer%"
+      infoReden: "&7- Reden: &6%reportReden%"
+      infoDatum: "&7- Datum: &6%reportDatum%"
+      infoModerator: "&7- Moderator: &6%reportModerator%"
   Default:
     subCommandNotFound: "&cSorry, u hebt geen juiste sub-command ingevoerd."
 

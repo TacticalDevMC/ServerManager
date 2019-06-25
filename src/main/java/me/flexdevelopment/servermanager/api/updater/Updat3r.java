@@ -136,7 +136,7 @@ public class Updat3r {
         if (update.isCritical()) {
             p.sendMessage(color("&c&lLet op, deze build is gemarkeert als belangrijk. Installeer hem zo snel mogelijk!"));
         }
-        p.sendMessage(color("&6Om deze update te installeren, type je &6&l/servm update."));
+        p.sendMessage(color("&6Om deze update te installeren, type je &6&l/servm update&6."));
         p.sendMessage(color("   &7-=-=-=[&3Server&bManager&7]=-=-=-   "));
     }
 
@@ -144,10 +144,8 @@ public class Updat3r {
         Bukkit.getScheduler().runTaskLaterAsynchronously(ServerManager.getPlugin(ServerManager.class), new Runnable() {
             public void run() {
                 if (p.isOp()) {
-                    if (update == null) {
-                        Bukkit.getConsoleSender().sendMessage("[ServerManager-Updater] Updater is null.");
-                        return;
-                    }
+                    if (update == null) return;
+
                     if (!update.isNewer()) {
                         Bukkit.getConsoleSender().sendMessage("[ServerManager-Updater] Er is geen update gevonden! U gebruikt momenteel de versie " + update.getVersion());
                         return;
