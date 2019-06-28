@@ -33,6 +33,10 @@ public class ConfigModule {
     private String logoutMessage = FileManager.get("config.yml").getString("logout-message");
     private String logoutMessageItemName = FileManager.get("config.yml").getString("Items.LogoutMessage.Name");
 
+    private String reloadPluginItemName = FileManager.get("config.yml").getString("Items.ReloadMenu.ReloadPlugin.Name");
+    private String reloadServerItemName = FileManager.get("config.yml").getString("Items.ReloadMenu.ReloadServer.Name");
+
+
     public String getWhitelistItemName() {
         return color(whitelistItemName);
     }
@@ -85,6 +89,14 @@ public class ConfigModule {
 
     public String getLogoutMessageItemName() {
         return color(logoutMessageItemName);
+    }
+
+    public String getReloadPluginItemName() {
+        return color(reloadPluginItemName);
+    }
+
+    public String getReloadServerItemName() {
+        return color(reloadServerItemName);
     }
 }
 

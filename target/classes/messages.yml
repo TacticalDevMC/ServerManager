@@ -1,9 +1,9 @@
-prefix: "&7[&3Server&bManager&7]"
+prefix: "&7[&3Server&bManager&7] "
 geen-perms: "%prefix% &cU hebt hier geen permissions voor."
 
 Commands:
   Main:
-    geenArgs: "&7Usage: &c/servermanager <help, update, updateinfo, openmenu>&7."
+    geenArgs: "&7Usage: &c/servermanager <help, update, updateinfo, openmenu, reload>&7."
   PluginManager:
     geenArgs: "&7Usage: &c/pluginmanager <enable, disable, load, unload, reload, dump, info, list> <plugin (Restart/reload: all, *)>&7."
     pluginAlreadyEnabled: "%prefix% &cDeze plugin staat al aan."
@@ -54,6 +54,10 @@ Commands:
       infoModerator: "&7- Moderator: &6%reportModerator%"
   Default:
     subCommandNotFound: "&cSorry, u hebt geen juiste sub-command ingevoerd."
+
+ReloadMenu:
+  reloadPluginSucces: "%prefix% &7De plugin is succesvol &6herladen&7."
+  reloadServerSucces: "%prefix% &7De server is succesvol &6herladen&7."
 
 login-message-canceled: "%prefix% &7De &6LoginMessage &7configuratie wordt gecanceld."
 login-message-chat-message: "%prefix% &7De &6LoginMessage &7configuratie wordt gestart, type nu in de chat welke message u graag wilt. Type je &cGeen &7wordt de login message gezet naar geen, en heb je geen login message, type je &ccancel &7wordt alles gecanceld."

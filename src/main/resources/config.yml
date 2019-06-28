@@ -20,6 +20,11 @@ Items:
     Name: "&6Verander De LoginMessage"
   LogoutMessage:
     Name: "&6Verander De LogoutMessage"
+  ReloadMenu:
+    ReloadPlugin:
+      Name: "&c%diamond% &6Reload de plugin"
+    ReloadServer:
+      Name: "&c%diamond% &6Reload de server"
 
 #ServerManager MOET hier blijven staan.
 ignored-plugins: [ServerManager]

@@ -1,12 +1,12 @@
 package me.flexdevelopment.servermanager.modules.player.listeners.inventory;
 
 import me.flexdevelopment.servermanager.ServerManager;
+import me.flexdevelopment.servermanager.api.utils.Chat;
 import me.flexdevelopment.servermanager.inventory.menus.*;
 import me.joran.superwhitelist.SuperWhitelist;
 import me.joran.superwhitelist.managers.FileManager;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
-import org.bukkit.Server;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -97,6 +97,30 @@ public class ClickListener implements Listener {
             event.setCancelled(true);
         } else if (inventory.getTitle().equalsIgnoreCase(OPPlayersListMenu.getPlayersListInventoryName())) {
             event.setCancelled(true);
+        } else if (inventory.getTitle().equalsIgnoreCase(ReloadMenu.getReloadInventoryName())) {
+            event.setCancelled(true);
+            switch (event.getSlot()) {
+                case 3:
+                    me.flexdevelopment.servermanager.api.utils.FileManager.save(ServerManager.getInstance(), "config.yml");
+                    me.flexdevelopment.servermanager.api.utils.FileManager.save(ServerManager.getInstance(), "messages.yml");
+                    me.flexdevelopment.servermanager.api.utils.FileManager.save(ServerManager.getInstance(), "reports.yml");
+                    me.flexdevelopment.servermanager.api.utils.FileManager.reload(ServerManager.getInstance(), "config.yml");
+                    me.flexdevelopment.servermanager.api.utils.FileManager.reload(ServerManager.getInstance(), "messages.yml");
+                    me.flexdevelopment.servermanager.api.utils.FileManager.reload(ServerManager.getInstance(), "reports.yml");
+                    Bukkit.getPluginManager().getPlugin("ServerManager").reloadConfig();
+                    player.closeInventory();
+                    player.sendMessage(ServerManager.getInstance().getMessageModule().getReloadPluginSucces());
+                    break;
+                case 5:
+                    player.sendMessage(ServerManager.getInstance().getMessageModule().getReloadServerSucces());
+                    player.closeInventory();
+                    for (Player players : Bukkit.getOnlinePlayers()) {
+                        players.kickPlayer(color(Chat.getPrefix() + "&c&lDe server gaat reloaden, rejoin a.u.b."));
+                    }
+                    Bukkit.reload();
+                    break;
+                default:
+            }
         }
     }
 }

@@ -92,6 +92,10 @@ public class MessageModule {
     private String infoDatum = FileManager.get("messages.yml").getString("Commands.Report.info.infoDatum");
     private String infoModerator = FileManager.get("messages.yml").getString("Commands.Report.info.infoModerator");
 
+    // reloadmenu
+    private String reloadPluginSucces = FileManager.get("messages.yml").getString("ReloadMenu.reloadPluginSucces");
+    private String reloadServerSucces = FileManager.get("messages.yml").getString("ReloadMenu.reloadServerSucces");
+
     public String getPrefix() {
         return color(prefix);
     }
@@ -290,5 +294,13 @@ public class MessageModule {
 
     public String getInfoModerator() {
         return color(infoModerator);
+    }
+
+    public String getReloadPluginSucces() {
+        return color(reloadPluginSucces).replace("%prefix%", prefix);
+    }
+
+    public String getReloadServerSucces() {
+        return color(reloadServerSucces).replace("%prefix%", prefix);
     }
 }

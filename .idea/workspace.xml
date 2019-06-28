@@ -6,10 +6,35 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/ServerManager.java" line="40" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/ServerManager.java" line="48" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e0f8d49-ed49-4ae5-a521-8110fa7adc2b" name="Default Changelist" comment="" />
+    <list default="true" id="8e0f8d49-ed49-4ae5-a521-8110fa7adc2b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/ReloadMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/main/ReloadSubCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ServerManager.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/ConfigModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/ConfigModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/enums/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/enums/Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/message/MessageModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/message/MessageModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/ServerManagerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/ServerManagerCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/listeners/inventory/ClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/listeners/inventory/ClickListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/flexdevelopment/servermanager/api/ConfigModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/flexdevelopment/servermanager/api/ConfigModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/flexdevelopment/servermanager/api/enums/Commands.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/flexdevelopment/servermanager/api/enums/Commands.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/flexdevelopment/servermanager/api/message/MessageModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/flexdevelopment/servermanager/api/message/MessageModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/flexdevelopment/servermanager/api/updater/Updat3r$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/flexdevelopment/servermanager/api/updater/Updat3r$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/flexdevelopment/servermanager/api/updater/Updat3r$Update.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/flexdevelopment/servermanager/api/updater/Updat3r$Update.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/flexdevelopment/servermanager/api/updater/Updat3r.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/flexdevelopment/servermanager/api/updater/Updat3r.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/flexdevelopment/servermanager/modules/player/commands/ServerManagerCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/flexdevelopment/servermanager/modules/player/commands/ServerManagerCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/InfoPluginsSubCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/InfoPluginsSubCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/flexdevelopment/servermanager/modules/player/listeners/inventory/ClickListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/flexdevelopment/servermanager/modules/player/listeners/inventory/ClickListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/messages.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/messages.yml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,80 +47,21 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/listeners/inventory/ClickListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="51" column="55" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/enums/Commands.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+              <caret line="4" column="156" selection-start-line="4" selection-start-column="156" selection-end-line="4" selection-end-column="156" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="32" selection-end-line="17" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/ConfigModule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="99" lean-forward="true" selection-start-line="25" selection-start-column="99" selection-end-line="25" selection-end-column="99" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#229#230#0" expanded="true" />
-                <element signature="e#267#268#0" expanded="true" />
-                <element signature="e#833#834#0" expanded="true" />
-                <element signature="e#873#874#0" expanded="true" />
-                <element signature="e#920#921#0" expanded="true" />
-                <element signature="e#963#964#0" expanded="true" />
-                <element signature="e#1093#1094#0" expanded="true" />
-                <element signature="e#1141#1142#0" expanded="true" />
-                <element signature="e#1091#1092#0" expanded="true" />
-                <element signature="e#1125#1126#0" expanded="true" />
-                <element signature="e#1363#1364#0" expanded="true" />
-                <element signature="e#1397#1398#0" expanded="true" />
-                <element signature="e#1554#1555#0" expanded="true" />
-                <element signature="e#1595#1596#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/MainMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/messages.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="53" lean-forward="true" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+            <state relative-caret-position="153">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -105,6 +71,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -118,27 +85,13 @@
       <dir>C:\Users\peper\IdeaProjects\ServerManager\src\main\java\me\flexdevelopment\servermanager\inventory\creatings</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/PlayerModule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/creatings/CreateItemStacks.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/TestCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/main/OpenMenuSubCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/PlayerInventoryClickListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/RegionCompare.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/Reflection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/WorldGuardLegacyManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/CustomFlags.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/XMaterial.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/ServerManagerCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/main/UpdateSubCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/updater/Updat3r.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/listeners/inventory/PlayerInventoryClickListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/Chat.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/StringUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/PluginsManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/PluginUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/ThreadUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/UpdateResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/SpiGetUtil.java" />
@@ -147,31 +100,48 @@
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/RestartPluginsSubCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/ReloadPluginsSubCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/LoadPluginsSubCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/EnablePluginsSubCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/DisablePluginsSubCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/PLManagerCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/FlagUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/InfoPluginsSubCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/messages.yml" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/PLuginsListMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/ListPluginsSubCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/PluginsListMenu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/message/MessageModule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/ServerManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/WhitelistMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/PlayersLIstMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/PlayersListMenu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/enums/Commands.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/HelpMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/main/HelpSubCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/Manager.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/ManagePlayerMenu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/ConfigModule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/listeners/inventory/ClickListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/MainMenu.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
         <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/OPPlayersListMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/PluginUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/DisablePluginsSubCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/EnablePluginsSubCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/listeners/player/ChatListenezr.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/MainMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/listeners/player/PlayerConnectionListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/listeners/player/ChatListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/enums/report/hackes/HackTypes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/enums/report/hackes/Hackes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/enums/report/ReportType.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/reports.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/PlayerModule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/ShowReportsCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/ReportCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/ServerManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/ClearReportsCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/InfoPluginsSubCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/managers/ReportManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/updater/Updat3r.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/ServerManagerCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/main/ReloadSubCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/ConfigModule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/ReloadMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/message/MessageModule.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/messages.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/listeners/inventory/ClickListener.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/enums/Commands.java" />
       </list>
     </option>
   </component>
@@ -210,7 +180,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -285,6 +255,31 @@
               <item name="servermanager" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ServerManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ServerManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="me" type="462c0819:PsiDirectoryNode" />
+              <item name="flexdevelopment" type="462c0819:PsiDirectoryNode" />
+              <item name="servermanager" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ServerManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ServerManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="me" type="462c0819:PsiDirectoryNode" />
+              <item name="flexdevelopment" type="462c0819:PsiDirectoryNode" />
+              <item name="servermanager" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="managers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ServerManager" type="b2602c69:ProjectViewProjectNode" />
@@ -447,21 +442,6 @@
               <item name="servermanager" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="player" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
-              <item name="subcommands" type="462c0819:PsiDirectoryNode" />
-              <item name="pluginmanager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ServerManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ServerManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="me" type="462c0819:PsiDirectoryNode" />
-              <item name="flexdevelopment" type="462c0819:PsiDirectoryNode" />
-              <item name="servermanager" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="player" type="462c0819:PsiDirectoryNode" />
               <item name="listeners" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -483,19 +463,34 @@
               <item name="ServerManager" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="me" type="462c0819:PsiDirectoryNode" />
+              <item name="flexdevelopment" type="462c0819:PsiDirectoryNode" />
+              <item name="servermanager" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+              <item name="listeners" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ServerManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ServerManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Test Servers/localhost/plugins/SuperWhitelist.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -506,12 +501,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="me.flexdevelopment.servermanager.modules.player.commands" />
       <recent name="me.flexdevelopment.servermanager.inventory.menus" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="me.flexdevelopment.servermanager.modules.player.commands.subcommands.main" />
       <recent name="me.flexdevelopment.servermanager.modules.player.commands.subcommands.pluginmanager" />
       <recent name="me.flexdevelopment.servermanager.modules.player.commands" />
-      <recent name="me.flexdevelopment.servermanager.modules.player.commands.subcommands.main" />
       <recent name="me.flexdevelopment.servermanager.modules.player.listeners.inventory" />
       <recent name="me.flexdevelopment.servermanager.modules" />
     </key>
@@ -578,17 +574,43 @@
       <workItem from="1560979755706" duration="4268000" />
       <workItem from="1561107869562" duration="5940000" />
       <workItem from="1561387766396" duration="6731000" />
+      <workItem from="1561407330602" duration="5098000" />
+      <workItem from="1561455333833" duration="11838000" />
+      <workItem from="1561467300921" duration="2838000" />
+      <workItem from="1561737443628" duration="345000" />
     </task>
+    <task id="LOCAL-00001" summary="Kleine fixes">
+      <created>1561408565516</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561408565516</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Login en Logout message gemaakt, via chat.">
+      <created>1561412421956</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561412421956</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Report gemaakt, en kleine fixes">
+      <created>1561465741597</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561465741598</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46880000" />
+    <option name="totallyTimeSpent" value="66999000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26812366" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25373134" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -608,7 +630,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3299075" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32887974" />
-      <window_info anchor="bottom" id="Floobits" order="13" />
+      <window_info anchor="bottom" id="Floobits" order="13" visible="true" weight="0.3299075" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -624,187 +646,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Kleine fixes" />
+    <MESSAGE value="Login en Logout message gemaakt, via chat." />
+    <MESSAGE value="Report gemaakt, en kleine fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Report gemaakt, en kleine fixes" />
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/main/UpdateInfoSubCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/updater/Updat3r.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="151" column="21" selection-start-line="151" selection-start-column="21" selection-end-line="151" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/message/MessageManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/ServerManagerCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="58" selection-start-line="58" selection-end-line="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/main/UpdateSubCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="103" selection-start-line="27" selection-start-column="103" selection-end-line="27" selection-end-column="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/StringUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/PluginsManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="105" column="51" selection-start-line="105" selection-start-column="51" selection-end-line="105" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1936#1937#0" expanded="true" />
-            <element signature="e#1986#1987#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/ThreadUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/UpdateResult.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/SpiGetUtil.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/PluginUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="914">
-          <caret line="494" column="35" selection-start-line="494" selection-start-column="35" selection-end-line="494" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7946#7947#0" expanded="true" />
-            <element signature="e#7996#7997#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/UnloadPluginsSubCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/RestartPluginsSubCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/ReloadPluginsSubCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/LoadPluginsSubCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/EnablePluginsSubCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/DumpPluginsSubCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/DisablePluginsSubCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/IdeaProjects/Spigot/SuperWhitelist/src/main/resources/whitelist/config.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/IdeaProjects/StarCraft - Server/StarCraftLobby/target/classes/me/joran/starcraftlobby/lobbymanager/events/player/inventory/InventoryClickListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#1029#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../VortexLobbyNieuw/target/classes/me/flexdevelopment/vortexlobbynieuw/modules/players/listeners/PlayerInventoryClick.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/Chat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="73" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/FlagUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -812,13 +664,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -838,23 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
           <caret line="23" column="67" lean-forward="true" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/InfoPluginsSubCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="3" column="54" lean-forward="true" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/ListPluginsSubCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -881,20 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/message/MessageModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="199" column="5" selection-start-line="199" selection-start-column="5" selection-end-line="199" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-            <element signature="e#8496#8497#0" expanded="true" />
-            <element signature="e#8537#8538#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/IdeaProjects/TrollPlugin/src/main/java/me/joran/trollplugin/troll/inventory/PrankInventory.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -905,27 +719,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/ServerManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/PluginsListMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" selection-start-line="29" selection-start-column="99" selection-end-line="29" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/enums/Commands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -953,13 +750,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/WhitelistMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="24" column="106" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="106" />
         </state>
       </provider>
     </entry>
@@ -1004,10 +794,258 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/OPPlayersListMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/UnloadPluginsSubCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/utils/PluginUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3602">
+          <caret line="496" column="35" selection-start-line="496" selection-start-column="35" selection-end-line="496" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7946#7947#0" expanded="true" />
+            <element signature="e#7996#7997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/DisablePluginsSubCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/EnablePluginsSubCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/MainMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="863">
+          <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/listeners/player/PlayerConnectionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="53" lean-forward="true" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/listeners/player/ChatListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="17" column="97" selection-start-line="17" selection-start-column="97" selection-end-line="17" selection-end-column="97" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/enums/report/hackes/Hackes.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/reports.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/PlayerModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/enums/report/ReportType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="81" selection-start-line="4" selection-start-column="81" selection-end-line="4" selection-end-column="81" />
+          <folding>
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/Managers.java" />
+    <entry file="file://$USER_HOME$/Desktop/IdeaProjects/Private Use/KitPvp-1/src/main/java/me/joran/kitpvp/kitpvpManager/commands/ResetCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/IdeaProjects/Private Use/KitPvp-1/src/main/java/me/joran/kitpvp/KitPvP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="107" column="66" lean-forward="true" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/ServerManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="62" column="41" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/IdeaProjects/Private Use/KitPvp-1/src/main/java/me/joran/kitpvp/kitpvpManager/commands/GetInfoCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" selection-start-line="22" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/ListPluginsSubCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/pluginmanager/InfoPluginsSubCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="41" column="126" lean-forward="true" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="126" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/updater/Updat3r.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="138" column="89" selection-start-line="138" selection-start-column="89" selection-end-line="138" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/ShowReportsCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="93" lean-forward="true" selection-start-line="26" selection-start-column="93" selection-end-line="26" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/managers/ReportManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="50" column="19" lean-forward="true" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/ReportCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/ClearReportsCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/ServerManagerCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/WhitelistMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="24" column="106" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/commands/subcommands/main/ReloadSubCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/messages.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/modules/player/listeners/inventory/ClickListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="51" column="55" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
+        <state relative-caret-position="761">
+          <caret line="118" column="21" selection-start-line="118" selection-start-column="21" selection-end-line="118" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1016,56 +1054,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="32" selection-end-line="17" selection-end-column="32" />
+        <state relative-caret-position="493">
+          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/ConfigModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="99" lean-forward="true" selection-start-line="25" selection-start-column="99" selection-end-line="25" selection-end-column="99" />
+        <state relative-caret-position="761">
+          <caret line="97" column="41" selection-start-line="97" selection-start-column="41" selection-end-line="97" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#920#921#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1141#1142#0" expanded="true" />
-            <element signature="e#1091#1092#0" expanded="true" />
-            <element signature="e#1125#1126#0" expanded="true" />
-            <element signature="e#1363#1364#0" expanded="true" />
-            <element signature="e#1397#1398#0" expanded="true" />
-            <element signature="e#1554#1555#0" expanded="true" />
-            <element signature="e#1595#1596#0" expanded="true" />
+            <element signature="e#3101#3102#0" expanded="true" />
+            <element signature="e#3152#3153#0" expanded="true" />
+            <element signature="e#3320#3321#0" expanded="true" />
+            <element signature="e#3370#3371#0" expanded="true" />
+            <element signature="e#3411#3412#0" expanded="true" />
+            <element signature="e#3461#3462#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/MainMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/message/MessageModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        <state relative-caret-position="-1092">
+          <caret line="96" column="112" selection-start-line="96" selection-start-column="112" selection-end-line="96" selection-end-column="112" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#12363#12364#0" expanded="true" />
+            <element signature="e#12439#12440#0" expanded="true" />
+            <element signature="e#12600#12601#0" expanded="true" />
+            <element signature="e#12676#12677#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/ReloadMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="115" selection-start-line="30" selection-start-column="115" selection-end-line="30" selection-end-column="115" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/inventory/menus/OPPlayersListMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+        <state relative-caret-position="153">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/messages.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/flexdevelopment/servermanager/api/enums/Commands.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="53" lean-forward="true" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+        <state relative-caret-position="68">
+          <caret line="4" column="156" selection-start-line="4" selection-start-column="156" selection-end-line="4" selection-end-column="156" />
         </state>
       </provider>
     </entry>

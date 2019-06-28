@@ -3,10 +3,7 @@ package me.flexdevelopment.servermanager.modules.player.commands;
 import me.flexdevelopment.servermanager.ServerManager;
 import me.flexdevelopment.servermanager.api.enums.Commands;
 import me.flexdevelopment.servermanager.modules.player.commands.base.CommandBase;
-import me.flexdevelopment.servermanager.modules.player.commands.subcommands.main.HelpSubCommand;
-import me.flexdevelopment.servermanager.modules.player.commands.subcommands.main.OpenMenuSubCommand;
-import me.flexdevelopment.servermanager.modules.player.commands.subcommands.main.UpdateInfoSubCommand;
-import me.flexdevelopment.servermanager.modules.player.commands.subcommands.main.UpdateSubCommand;
+import me.flexdevelopment.servermanager.modules.player.commands.subcommands.main.*;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -25,6 +22,7 @@ public class ServerManagerCommand extends CommandBase {
     UpdateInfoSubCommand updateInfo = new UpdateInfoSubCommand();
     OpenMenuSubCommand openMenu = new OpenMenuSubCommand();
     UpdateSubCommand update = new UpdateSubCommand();
+    ReloadSubCommand reload = new ReloadSubCommand();
 
     @Override
     public boolean executeCommand(CommandSender sender, Command cmd, String label, String[] args) {
@@ -54,6 +52,9 @@ public class ServerManagerCommand extends CommandBase {
                 break;
             case "update":
                 this.update.onCommand(sender, cmd, label, args);
+                break;
+            case "reload":
+                this.reload.onCommand(sender, cmd, label, args);
                 break;
             default:
                 player.sendMessage(ServerManager.getInstance().getMessageModule().getGeenSubCommandFound());
