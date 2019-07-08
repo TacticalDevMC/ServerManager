@@ -11,8 +11,6 @@ import org.bukkit.entity.Player;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static me.flexdevelopment.servermanager.api.utils.Chat.color;
-
 public class ReportManager {
 
     private ServerManager plugin;
@@ -29,7 +27,6 @@ public class ReportManager {
         String reason = (String) FileManager.get("reports.yml").get("Players." + target.getUniqueId() + ".ReportType");
 
         if (reden.equals(reason)) {
-
             FileManager.get("reports.yml").set("Players." + target.getUniqueId() + ".Name", target.getName());
             FileManager.get("reports.yml").set("Players." + target.getUniqueId() + ".Moderator", moderator.getName());
             FileManager.get("reports.yml").set("Players." + target.getUniqueId() + ".ReportType", reden);

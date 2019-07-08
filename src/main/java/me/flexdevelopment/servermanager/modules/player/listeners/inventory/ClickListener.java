@@ -54,17 +54,24 @@ public class ClickListener implements Listener {
                     }
                     break;
                 case 21:
-                    if (event.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(MainMenu.getLoginMessageName())) {
-                        ServerManager.getInstance().getLoginMessagePlayer().add(player.getUniqueId());
-                        player.sendMessage(ServerManager.getInstance().getMessageModule().getLoginMessageChatMessage());
-                        player.closeInventory();
-                    }
+//                    if (event.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(MainMenu.getLoginMessageName())) {
+//                        ServerManager.getInstance().getLoginMessagePlayer().add(player.getUniqueId());
+//                        player.sendMessage(ServerManager.getInstance().getMessageModule().getLoginMessageChatMessage());
+//                        player.closeInventory();
+//                    }
+                    player.sendMessage(color("&cDit is momenteel nog niet toegankelijk, dit wordt toegankelijk in één van de volgende updates."));
+                    break;
                 case 23:
-                    if (event.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(MainMenu.getLogoutMessageName())) {
-                        ServerManager.getInstance().getlogoutMessagePlayer().add(player.getUniqueId());
-                        player.sendMessage(ServerManager.getInstance().getMessageModule().getLogoutMessageChatMessage());
-                        player.closeInventory();
-                    }
+//                    if (event.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(MainMenu.getLogoutMessageName())) {
+//                        ServerManager.getInstance().getlogoutMessagePlayer().add(player.getUniqueId());
+//                        player.sendMessage(ServerManager.getInstance().getMessageModule().getLogoutMessageChatMessage());
+//                        player.closeInventory();
+//                    }
+                    player.sendMessage(color("&cDit is momenteel nog niet toegankelijk, dit wordt toegankelijk in één van de volgende updates."));
+                case 31:
+                    MainMenu mainMenu = new MainMenu();
+
+                    mainMenu.openPage2(player);
                     break;
                 default:
             }
@@ -118,6 +125,27 @@ public class ClickListener implements Listener {
                         players.kickPlayer(color(Chat.getPrefix() + "&c&lDe server gaat reloaden, rejoin a.u.b."));
                     }
                     Bukkit.reload();
+                    break;
+                default:
+            }
+        } else if (inventory.getTitle().equalsIgnoreCase(MainMenu.getMainMenuInventoryName2())) {
+            event.setCancelled(true);
+            switch (event.getSlot()) {
+                case 11:
+                    if (ServerManager.getInstance().getConfigModule().getCommandSpy().equals("Uit")) {
+                        player.sendMessage(ServerManager.getInstance().getMessageManager().getMessageWithPath("Commands.CommandSpy.commandSpySetAan"));
+                        ServerManager.getInstance().getConfigModule().setCommandSpy("Aan");
+                        player.closeInventory();
+                    } else if (ServerManager.getInstance().getConfigModule().getCommandSpy().equals("Aan")) {
+                        player.sendMessage(ServerManager.getInstance().getMessageManager().getMessageWithPath("Commands.CommandSpy.commandSpySetUit"));
+                        ServerManager.getInstance().getConfigModule().setCommandSpy("Uit");
+                        player.closeInventory();
+                    }
+                    break;
+                case 31:
+                    MainMenu mainMenu = new MainMenu();
+
+                    mainMenu.open(player);
                     break;
                 default:
             }

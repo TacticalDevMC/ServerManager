@@ -16,3 +16,9 @@ commands:
     description: Report een speler
   showreports:
   clearreports:
+  commandspy:
+  latestlog:
+  clearchat:
+    aliases:
+      - cc
+      - clearc

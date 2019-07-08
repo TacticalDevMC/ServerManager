@@ -96,6 +96,14 @@ public class MessageModule {
     private String reloadPluginSucces = FileManager.get("messages.yml").getString("ReloadMenu.reloadPluginSucces");
     private String reloadServerSucces = FileManager.get("messages.yml").getString("ReloadMenu.reloadServerSucces");
 
+    // commandspy
+    private String commandSpyAan = FileManager.get("messages.yml").getString("Commands.CommandSpy.commandSpyAan");
+    private String commandSpyUit = FileManager.get("messages.yml").getString("Commands.CommandSpy.commandSpyUit");
+    private String commandSpyDisabled = FileManager.get("messages.yml").getString("Commands.CommandSpy.commandSpyDisabled");
+    private String commandSpySetAan = FileManager.get("messages.yml").getString("Commands.CommandSpy.commandSpySetAan");
+    private String commandSpySetUit = FileManager.get("messages.yml").getString("Commands.CommandSpy.commandSpySetUit");
+
+
     public String getPrefix() {
         return color(prefix);
     }
@@ -302,5 +310,25 @@ public class MessageModule {
 
     public String getReloadServerSucces() {
         return color(reloadServerSucces).replace("%prefix%", prefix);
+    }
+
+    public String getCommandSpyAan() {
+        return color(commandSpyAan).replace("%prefix%", prefix);
+    }
+
+    public String getCommandSpyUit() {
+        return color(commandSpyUit).replace("%prefix%", prefix);
+    }
+
+    public String getCommandSpyDisabled() {
+        return color(commandSpyDisabled).replace("%prefix%", prefix);
+    }
+
+    public String getCommandSpySetAan() {
+        return color(commandSpySetAan).replace("%prefix%", prefix);
+    }
+
+    public String getCommandSpySetUit() {
+        return color(commandSpySetUit).replace("%prefix%", prefix);
     }
 }

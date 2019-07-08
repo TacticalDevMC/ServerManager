@@ -2,6 +2,15 @@
 
 login-message: "Geen"
 logout-message: "Geen"
+commandspy: "Aan"
+
+Autobroadcast:
+  Enabled: "True" #alleen True of False (ja & nee)
+  Messages:
+    - "&7Deze plugin is gemaakt door &6TacticalDev&7."
+    - "&7Deze plugin kunt u vinden op spigot."
+    - "&7Deze plugin is &6'100%' &7gratis."
+  Timer: 160
 
 Items:
   Whitelist:
@@ -13,7 +22,7 @@ Items:
         Name: "&c%diamond% &4Uit"
   Players:
     Name: "&6Players"
-    SkullOwner: "ZwarteTape" #DIT KAN ALLE SKINS BEVATTEN, INCLUSIEF LINKS
+    SkullOwner: "TacticalDev" #DIT KAN ALLE SKINS BEVATTEN, INCLUSIEF LINKS
   OPPlayers:
     Name: "&6OP-Players"
   LoginMessage:
@@ -25,6 +34,9 @@ Items:
       Name: "&c%diamond% &6Reload de plugin"
     ReloadServer:
       Name: "&c%diamond% &6Reload de server"
+  CommandSpy:
+    Name: "&6Verander de CommandSpy status"
+    EnchantedIfEnabled: "True" #alleen True of False (ja & nee)
 
 #ServerManager MOET hier blijven staan.
 ignored-plugins: [ServerManager]

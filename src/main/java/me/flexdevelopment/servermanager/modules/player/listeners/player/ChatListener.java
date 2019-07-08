@@ -1,7 +1,6 @@
 package me.flexdevelopment.servermanager.modules.player.listeners.player;
 
 import me.flexdevelopment.servermanager.ServerManager;
-import me.flexdevelopment.servermanager.api.utils.FileManager;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -49,6 +48,9 @@ public class ChatListener implements Listener {
                 event.setCancelled(true);
                 ServerManager.getInstance().getlogoutMessagePlayer().remove(player.getUniqueId());
             }
+
         }
+
+        ServerManager.getInstance().getLatestLogManager().setMessagesLog(player, message);
     }
 }

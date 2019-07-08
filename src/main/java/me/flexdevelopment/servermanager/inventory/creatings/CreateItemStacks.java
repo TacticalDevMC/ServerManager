@@ -3,6 +3,7 @@ package me.flexdevelopment.servermanager.inventory.creatings;
 import api.vortexgames.inventory.ItemBuilder;
 import api.vortexgames.inventory.SkullBuilder;
 import me.flexdevelopment.servermanager.api.utils.Chat;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -35,6 +36,16 @@ public class CreateItemStacks {
         ItemMeta metaStack = stack.getItemMeta();
         metaStack.setDisplayName(Chat.color(name));
         metaStack.setLore(createLore(lore));
+        stack.setItemMeta(metaStack);
+        return stack;
+    }
+
+    public static ItemStack createItemWithEnchantment(ItemStack item, String name, Enchantment enchantment, int enchantLevel, String... lore) {
+        ItemStack stack = new ItemBuilder(item);
+        ItemMeta metaStack = stack.getItemMeta();
+        metaStack.setDisplayName(Chat.color(name));
+        metaStack.setLore(createLore(lore));
+        metaStack.addEnchant(enchantment, enchantLevel, false);
         stack.setItemMeta(metaStack);
         return stack;
     }

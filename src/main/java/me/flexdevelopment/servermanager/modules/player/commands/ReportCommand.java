@@ -55,8 +55,39 @@ public class ReportCommand extends CommandBase {
         switch (args[1]) {
             case "Hackes":
                 if (args[2].equalsIgnoreCase("speed")) {
+                    if (FileManager.get("reports.yml").get("Players." + target.getUniqueId()) != null) {
+                        player.sendMessage(ServerManager.getInstance().getMessageManager().getMessageWithPath("Commands.Report.erStaatNogEenReportOpen"));
+                        return false;
+                    }
+
                     ServerManager.getInstance().getReportManager().reportPlayer(player, target, "speed");
                     player.sendMessage(ServerManager.getInstance().getMessageModule().getReportedSucces().replace("%target%", target.getName()).replace("%reden%", "speed"));
+                    for (Player players : Bukkit.getOnlinePlayers()) {
+                        if (players.hasPermission("servermanager.report.see")) {
+                            players.spigot().sendMessage(
+                                    new ComponentBuilder("Er is een report binnen gekomen!\n\nKlik ")
+                                            .color(ChatColor.GOLD)
+                                            .append("HIER")
+                                            .event(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/showreports " + target.getName()))
+                                            .event(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Klik hier om de report te zien").color(ChatColor.AQUA).create()))
+                                            .color(ChatColor.BLUE)
+                                            .bold(false)
+                                            .underlined(true)
+                                            .append(" om " + target.getName() + " zijn reports te zien.")
+                                            .reset()
+                                            .color(ChatColor.GOLD)
+                                            .create()
+                            );
+                        }
+                    }
+                } else if (args[2].equalsIgnoreCase("killaura")) {
+                    if (FileManager.get("reports.yml").get("Players." + target.getUniqueId()) != null) {
+                        player.sendMessage(ServerManager.getInstance().getMessageManager().getMessageWithPath("Commands.Report.erStaatNogEenReportOpen"));
+                        return false;
+                    }
+
+                    ServerManager.getInstance().getReportManager().reportPlayer(player, target, "killaura");
+                    player.sendMessage(ServerManager.getInstance().getMessageModule().getReportedSucces().replace("%target%", target.getName()).replace("%reden%", "killaura"));
                     for (Player players : Bukkit.getOnlinePlayers()) {
                         if (players.hasPermission("servermanager.report.see")) {
                             players.spigot().sendMessage(

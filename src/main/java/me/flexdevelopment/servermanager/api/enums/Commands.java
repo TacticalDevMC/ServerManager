@@ -6,7 +6,10 @@ public enum Commands {
     PLMANAGERCOMMAND("pluginmanager", "/pluginmanager <enable, disable, load, unload, reload, dump, info, list> <plugin (Restart/reload: all, *)>", "PluginManager command", "servermanager.pluginmanager", "[plugmanager, plmanager, pluginm]"),
     REPORTCOMMAND("report", "/report <player> <type> <Hackes: speed, killaura> ", "Report een speler", null, null),
     SHOWREPORTSCOMMAND("showreports", "/showreports <player>", "Laat de speler zijn reports zien", "servermanager.report.showreports", null),
-    CLEARREPORTSCOMMAND("clearreports", "/clearreports <player>", "Clear de speler zijn reports", "servermanager.report.clearreports", null);
+    CLEARREPORTSCOMMAND("clearreports", "/clearreports <player>", "Clear de speler zijn reports", "servermanager.report.clearreports", null),
+    LATESTLOGCOMMAND("latestlog", "/latestlog <messages, commands, functions>", "Laat logs zien van alles.", "servermanager.latestlog", null),
+    COMMANDSPYCOMMAND("commandspy", "/commandspy", "Zet je commandspy aan of uit", "servermanager.commandspy", null),
+    CLEARCHATCOMMAND("clearchat", "/clearchat", "Clear de chat", "servermanager.clearchat", "cc", "clearc");
 
 
     private String command, usage, description, permission;

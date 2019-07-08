@@ -47,11 +47,28 @@ Commands:
     reportedSucces: "%prefix% &7U hebt de speler &6%target% &7gereport als reden &6%reden%&7."
     reportVerwijderd: "%prefix% &7De report van de speler &6%target% &7is verwijderd."
     geenReportsVoorDezeSpeler: "%prefix% &7Er zijn geen reports gevonden voor de speler &6%target%&7."
+    erStaatNogEenReportOpen: "%prefix% &7Er staat al een report open voor deze speler."
     info:
       infoHeader: "&bReported Player: &6%reportedPlayer%"
       infoReden: "&7- Reden: &6%reportReden%"
       infoDatum: "&7- Datum: &6%reportDatum%"
       infoModerator: "&7- Moderator: &6%reportModerator%"
+  CommandSpy:
+    commandSpyAan: "%prefix% &7Uw &6commandspy &7staat nu aan."
+    commandSpyUit: "%prefix% &7Uw &6commandspy &7staat nu uit."
+    commandSpyDisabled: "%prefix% &7De &6commandspy &7functie staat uit."
+    commandSpySetAan: "%prefix% &7De &6commandspy &7is nu aan gezet."
+    commandSpySetUit: "%prefix% &7De &6commandspy &7is nu uit gezet."
+  LatestLog:
+    geenArgs: "&7Usage: &c/latestlog <message, commands, functions> <player>&7."
+    geenLogsGevonden: "&cSorry, we hebben helaas geen logs gevonden."
+    info:
+      header: "&7--------&6Log van &c%target%&7-------------------"
+      messageFromAuthor: "&7%message%"
+      footer: "&7---------------------------"
+  ClearChat:
+    chatClearedSucces: "&6U hebt de chat succesvol gecleared!"
+    chatClearedSuccesBroadcast: "&6De speler &7%player% &6heeft de chat gecleared!"
   Default:
     subCommandNotFound: "&cSorry, u hebt geen juiste sub-command ingevoerd."
 

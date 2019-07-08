@@ -11,5 +11,7 @@ public class PlayerModule {
         FileManager.load(serverManager, "config.yml");
         FileManager.load(serverManager, "messages.yml");
         FileManager.load(serverManager, "reports.yml");
+        FileManager.load(serverManager, "logs/message.yml");
+        FileManager.load(serverManager, "logs/commands.yml");
     }
 }

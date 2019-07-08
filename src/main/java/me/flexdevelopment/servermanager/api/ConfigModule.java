@@ -36,6 +36,10 @@ public class ConfigModule {
     private String reloadPluginItemName = FileManager.get("config.yml").getString("Items.ReloadMenu.ReloadPlugin.Name");
     private String reloadServerItemName = FileManager.get("config.yml").getString("Items.ReloadMenu.ReloadServer.Name");
 
+    private String commandSpy = FileManager.get("config.yml").getString("commandspy");
+    private String commandSpyItemName = FileManager.get("config.yml").getString("Items.CommandSpy.Name");
+    private String commandSpyItemEnchanted = FileManager.get("config.yml").getString("Items.CommandSpy.EnchantedIfEnabled");
+
 
     public String getWhitelistItemName() {
         return color(whitelistItemName);
@@ -68,8 +72,8 @@ public class ConfigModule {
     public void setLoginMessage(String loginMessage) {
         FileManager.get("config.yml").set("login-message", loginMessage);
         FileManager.save(plugin, "config.yml");
-        Bukkit.getPluginManager().getPlugin(plugin.getDescription().getName()).reloadConfig();
-        Bukkit.reload();
+        FileManager.configs.remove("config.yml");
+        FileManager.load(plugin, "config.yml");
     }
 
     public String getLoginMessageItemName() {
@@ -83,8 +87,8 @@ public class ConfigModule {
     public void setLogoutMessage(String logoutMessage) {
         FileManager.get("config.yml").set("logout-message", logoutMessage);
         FileManager.save(plugin, "config.yml");
-        Bukkit.getPluginManager().getPlugin(plugin.getDescription().getName()).reloadConfig();
-        Bukkit.reload();
+        FileManager.configs.remove("config.yml");
+        FileManager.load(plugin, "config.yml");
     }
 
     public String getLogoutMessageItemName() {
@@ -97,6 +101,25 @@ public class ConfigModule {
 
     public String getReloadServerItemName() {
         return color(reloadServerItemName);
+    }
+
+    public String getCommandSpy() {
+        return commandSpy;
+    }
+
+    public void setCommandSpy(String commandSpy) {
+        FileManager.get("config.yml").set("commandspy", commandSpy);
+        FileManager.save(plugin, "config.yml");
+        FileManager.configs.remove("config.yml");
+        FileManager.load(plugin, "config.yml");
+    }
+
+    public String getCommandSpyItemName() {
+        return color(commandSpyItemName);
+    }
+
+    public String getCommandSpyItemEnchanted() {
+        return color(commandSpyItemEnchanted);
     }
 }
 
